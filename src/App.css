@@ -194,7 +194,7 @@ form button:hover {
   color: black;
 }
 
-/* .dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
   display: block;
-} */
+}
 

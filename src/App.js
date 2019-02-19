@@ -93,12 +93,12 @@ class App extends Component {
 			})
 		})
 	}
-	myFunction(){
-		document.getElementById('dropdown-content').classList.toggle('show');
-	}
 	
-
+	
 	render() {
+		// function myFunction(){
+		// 	document.getElementById('dropdown-content').style.display = 'block';
+		// }
 		
 		const posters = this.state.movieList.map((movie,i)=>{
 			return(<Poster key={i} movie={movie}/>)
@@ -109,17 +109,17 @@ class App extends Component {
 				<div className="nav-wrapper">
 					<div className="dropDownContainer">
 						<div className="dropdown">
-							<button onClick={this.myFunction} className="dropbtn">
+							<button  className="dropbtn">
 								<div></div>
 								<div></div>
 								<div></div>
 							</button>
 							<div className="dropdown-content">
-								<div className="menu">
+								{/* <div className="menu"> */}
 									<a onClick={this.popularMovie}>Popular Movies</a>
 									<a onClick={this.topRatedMovie}>Top Rated Movies</a>
 									<a onClick={this.trendingMovie}>Trending Movies</a>
-								</div>
+								{/* </div> */}
 							</div>
 						</div>
 					</div>
